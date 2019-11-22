@@ -15,7 +15,7 @@
 	<p>Name: ${person.name}</p>
 	<p>Gender: ${person.gender}</p>
 
-	<p>Enjoy: ${person.enjoy[0]}, ${person.enjoy[1]}</p>
+	<p>Enjoy: ${person.getListOfEnjoys()}</p>
 
 	<p>Them maths: 2 + 2 = ${2+2}</p>
 	

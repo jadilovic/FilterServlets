@@ -15,6 +15,8 @@
 		<p>
 			Enter your name: <br /> <input type="text" name="name">
 		</p>
+		
+		<p>Enter background color: <br/> <input type="text" name="color" ></p>
 
 		<p>
 			I am: <br /> 
