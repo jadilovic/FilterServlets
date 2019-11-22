@@ -36,12 +36,12 @@ public class FilterLoginServlet extends HttpServlet {
 			user.setUsername(username);
 			user.setPassword(password);
 
-			HttpSession session = request.getSession();
-			session.setAttribute("user", user);
+			// HttpSession session = request.getSession();
+			request.setAttribute("user", user);
 			
 			System.out.println("User " + user.getUsername() + " has been logged in");
 
-			RequestDispatcher success = request.getRequestDispatcher("view/success.jsp");
+			RequestDispatcher success = request.getRequestDispatcher("view/successEL.jsp");
 			success.forward(request, response);
 
 		} else {
